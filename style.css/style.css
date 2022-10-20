@@ -1,0 +1,78 @@
+header,footer{
+    width: 100%;
+    height: 300px;
+    background:lightblue;
+}
+footer{
+    background: dodgerblue;
+}
+main{
+    width:100%;
+    background:darkkhaki;
+}
+aside.left{
+    width:25%;
+    height: 1000px;
+    background:olive;
+    display:inline-block;
+    float: left;
+}
+main > section{
+    width:50%;
+    min-height:1000px;
+    background:darkslategrey;
+    display:inline-block; 
+    float:left;
+}
+main>section>article{
+    width: 100%;
+    height:180px;
+    border:1px solid black;
+    margin:20px 0px;
+}
+aside.right{
+    width:24.5%;
+    height:1000px;
+    background:lightsalmon;
+    display:inline-block;
+    float:left;
+}
+footer{
+    clear:both;
+    background:pink;
+}
+/*small device/mobilephones/smartphones*/
+@media only screen and (max-width:767px){
+    aside.left{
+        width:100%;
+        height:400px;
+    }
+    aside.right{
+        width:100%;
+        height:200px;
+    }
+    main > section{
+        width:100%;
+    }
+}
+/*mediam device / tablets */
+@media only screen and (min-width:767) and (max-width:991){
+    aside.left{
+        width:100%;
+        height:100px;
+    }
+    aside.right{
+        width:100%;
+        height:300px;
+    }
+    main > section{
+        width:100%;
+    }
+}
+/**/
+@media only screen and (min-width:991){
+    aside.left{
+        width:24%;
+        height:1000px;
+    }
+}
